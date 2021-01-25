@@ -1,12 +1,10 @@
 @import "_var.scss";
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
 
 :root {
   font-size: 15px;
   font-weight: 600;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 body {
@@ -62,6 +60,32 @@ span {
   }
 }
 
+#slider-container {
+  margin: 25px 0;
+
+  .slider {
+    height: 8px;
+    width: 100%;
+    background: #ecf0fb;
+    border-radius: 5px;
+
+    &::-moz-range-thumb {
+      box-shadow: 0px 0px 20px #10d8c450;
+      border: none;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      background: #ffffff;
+      cursor: pointer;
+    }
+
+    &::-moz-range-progress {
+      background-color: #a4f3eb;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+}
 
 // For frontend mentor
 .attribution {
@@ -70,7 +94,9 @@ span {
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
 // end
