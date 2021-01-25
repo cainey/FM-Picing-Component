@@ -70,13 +70,16 @@ span {
     border-radius: 5px;
 
     &::-moz-range-thumb {
-      box-shadow: 0px 0px 20px #10d8c450;
+      box-shadow: 0px 0px 20px #10d8c481;
       border: none;
       height: 40px;
       width: 40px;
       border-radius: 100%;
-      background: #ffffff;
+      background: #10d8c4;
       cursor: pointer;
+      background-image: url(/images/icon-slider.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
     }
 
     &::-moz-range-progress {
@@ -85,6 +88,71 @@ span {
       border-radius: 5px;
     }
   }
+}
+
+#price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: #293356;
+    font-size: 32px;
+    font-weight: 800;
+
+    #monthly {
+      color: #848ead;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
+
+#payment {
+  display: flex;
+  justify-content: space-between;
+  color: #848ead;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 34px;
+
+  #off {
+    padding: 5px;
+    border-radius: 5px;
+    background: #feede8;
+    color: #ff8d68;
+    font-size: 10px;
+    font-weight: 800;
+  }
+}
+
+#benifits {
+  border-top: solid 1px #ecf0fb;
+  margin-top: 38px;
+
+  ul {
+    padding-top: 24px;
+
+    li {
+      list-style: url(/images/icon-check.svg);
+      color: #848ead;
+      padding: 8px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}
+
+.btn {
+  height: 41px;
+  width: 170px;
+  background: #293356;
+  border: none;
+  border-radius: 25.5px;
+  color: #becdff;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 32px;
 }
 
 // For frontend mentor
