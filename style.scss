@@ -24,11 +24,10 @@ span {
   color: #848ead;
   font-size: 13px;
 }
-@media screen and (min-width: 370px) {
-  .container {
-    margin-top: 89px;
-    max-width: 100%;
-  }
+
+.container {
+  margin-top: 89px;
+  max-width: 100%;
 }
 
 #header {
