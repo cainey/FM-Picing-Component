@@ -24,39 +24,39 @@ span {
   color: #848ead;
   font-size: 13px;
 }
-@media screen and (max-width: 370px) {
-  .container {
-    margin-top: 89px;
-    max-width: 100%;
+@media screen and (min-width: 370px) {
+.container {
+  margin-top: 89px;
+  max-width: 100%;
+}
 
-    #header {
-      height: 145px;
-      text-align: center;
-      background-image: url("/images/pattern-circles.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 145px;
-    }
+  #header {
+    height: 145px;
+    text-align: center;
+    background-image: url("/images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 145px;
+  }
 
-    #inner {
-      width: 327px;
-      margin: 32px auto;
-      background: #fff;
-      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.062);
-      border-radius: 8px;
-      text-align: center;
-      padding: 34px 24px 32px 24px;
+  #inner {
+    width: 327px;
+    margin: 32px auto;
+    background: #fff;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.062);
+    border-radius: 8px;
+    text-align: center;
+    padding: 34px 24px 32px 24px;
 
-      #title {
-        h2 {
-          font-size: 12px;
-          color: #848ead;
-          text-transform: uppercase;
-        }
+    #title {
+      h2 {
+        font-size: 12px;
+        color: #848ead;
+        text-transform: uppercase;
       }
     }
   }
