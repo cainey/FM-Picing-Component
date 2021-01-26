@@ -25,6 +25,7 @@ span {
 
 .container {
   margin-top: 89px;
+  max-width: 100%;
 }
 
 .container #header {
