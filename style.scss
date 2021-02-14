@@ -109,6 +109,28 @@ span {
   }
 }
 
+#switch {
+  .toggle {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    width: 43px;
+    height: 22px;
+  }
+  
+  .toggle:before {
+    content: "";
+    width: 60px;
+    height: 28px;
+    display: block;
+    background: rgb(124, 131, 117);
+  }
+}
+
 #payment {
   display: flex;
   justify-content: space-between;

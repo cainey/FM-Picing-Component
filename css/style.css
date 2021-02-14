@@ -121,6 +121,26 @@ span {
   font-weight: 600;
 }
 
+#switch .toggle {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+  width: 43px;
+  height: 22px;
+}
+
+#switch .toggle:before {
+  content: "";
+  width: 60px;
+  height: 28px;
+  display: block;
+  background: #7c8375;
+}
+
 #payment {
   display: -webkit-box;
   display: -ms-flexbox;
