@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background-image: url("/images/bg-pattern.svg");
+  background-image: url("/dist/images/bg-pattern.svg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100vw 400px;
@@ -31,7 +31,7 @@ span {
 #header {
   height: 145px;
   text-align: center;
-  background-image: url("/images/pattern-circles.svg");
+  background-image: url("/dist/images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center center;
   display: -webkit-box;
@@ -121,24 +121,60 @@ span {
   font-weight: 600;
 }
 
-#switch .toggle {
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: transparent;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
+#switch {
   position: relative;
-  padding: 5px;
+  display: inline-block;
   width: 43px;
   height: 22px;
 }
 
-#switch .toggle:before {
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #CFD8EF;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 10px;
+}
+
+#switch .slider::before {
+  position: absolute;
   content: "";
-  width: 60px;
-  height: 28px;
-  display: block;
-  background: #7c8375;
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 100%;
+}
+
+#switch .slider input:checked + .slider {
+  background-color: #7AEADF;
+}
+
+input:checked + #switch .slider:before {
+  -webkit-transform: translateX(22px);
+          transform: translateX(22px);
+}
+
+#switch .slider .round {
+  border-radius: 34px;
+}
+
+#switch .slider .round:before {
+  border-radius: 50%;
 }
 
 #payment {

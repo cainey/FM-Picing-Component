@@ -1,6 +1,7 @@
 @import "_var.scss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
 
+
 :root {
   font-size: 15px;
   font-weight: 600;
@@ -9,7 +10,7 @@
 
 body {
   margin: 0;
-  background-image: url("/images/bg-pattern.svg");
+  background-image: url("/dist/images/bg-pattern.svg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100vw 400px;
@@ -33,7 +34,7 @@ span {
 #header {
   height: 145px;
   text-align: center;
-  background-image: url("/images/pattern-circles.svg");
+  background-image: url("/dist/images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
@@ -110,25 +111,59 @@ span {
 }
 
 #switch {
-  .toggle {
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-    border: none;
-    border-radius: 25px;
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 22px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
     cursor: pointer;
-    position: relative;
-    padding: 5px;
-    width: 43px;
-    height: 22px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #CFD8EF;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 10px;
+    
+    &::before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 4px;
+      bottom: 4px;
+      background: #fff;
+      transition: .4s;
+      border-radius: 100%;
+    
+    }
+    input:checked + .slider {
+      background-color: #7AEADF;
+    }
+    
+    input:checked + &:before {
+      transform: translateX(22px);
+    }
+
+    .round {
+      border-radius: 34px;
+      
+      &:before {
+        border-radius: 50%;
+      }
+    }
+    
   }
-  
-  .toggle:before {
-    content: "";
-    width: 60px;
-    height: 28px;
-    display: block;
-    background: rgb(124, 131, 117);
-  }
+
 }
 
 #payment {

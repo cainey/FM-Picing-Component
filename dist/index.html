@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/dist/css/style.css" />
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
@@ -47,9 +47,10 @@
         <div id="payment">
           <div>Monthly Billing</div>
 
-          <div id="switch">
-            <input type="checkbox" class="toggle" />
-          </div>
+          <label id="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
 
           <div>Yearly Billing <bold id="off">-25%</bold></div>
         </div>
@@ -72,6 +73,6 @@
       >. Coded by <a href="https://paulcaine.co.uk" target="_blank">Paul Caine</a>.
     </div>
 
-    <script src="/js/slider.js"></script>
+    <script src="/dist/js/slider.js"></script>
   </body>
 </html>
