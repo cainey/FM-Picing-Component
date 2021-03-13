@@ -1,3 +1,3 @@
-function outputUpdate(slide) {
-	document.querySelector('#slider').value = slide;
+function outputUpdate(slider) {
+	document.querySelector('#slider').value = slider;
 }

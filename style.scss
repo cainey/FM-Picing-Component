@@ -31,7 +31,7 @@ span {
   max-width: 100%;
 }
 
-#header {
+header {
   height: 145px;
   text-align: center;
   background-image: url("/dist/images/pattern-circles.svg");
@@ -44,7 +44,7 @@ span {
   height: 145px;
 }
 
-#inner {
+.inner {
   width: 327px;
   margin: 32px auto;
   background: #fff;
@@ -53,8 +53,8 @@ span {
   text-align: center;
   padding: 34px 24px 32px 24px;
 
-  #title {
-    h2 {
+  .title {
+    p {
       font-size: 12px;
       color: #848ead;
       text-transform: uppercase;
@@ -62,7 +62,7 @@ span {
   }
 }
 
-#slider-container {
+.slider-container {
   margin: 25px 0;
 
   .slider {
@@ -92,7 +92,7 @@ span {
   }
 }
 
-#price {
+.price {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ span {
   }
 }
 
-#switch {
+.switch {
   position: relative;
   display: inline-block;
   width: 43px;
@@ -150,8 +150,8 @@ span {
       background-color: #7AEADF;
     }
     
-    input:checked + &:before {
-      transform: translateX(22px);
+    input:checked + &:after {
+      transform: translateX(100%);
     }
 
     .round {
@@ -166,7 +166,7 @@ span {
 
 }
 
-#payment {
+.payment {
   display: flex;
   justify-content: space-between;
   color: #848ead;
@@ -174,7 +174,7 @@ span {
   font-weight: 600;
   margin-top: 34px;
 
-  #off {
+  .off {
     padding: 5px;
     border-radius: 5px;
     background: #feede8;
@@ -184,7 +184,7 @@ span {
   }
 }
 
-#benifits {
+.benifits {
   border-top: solid 1px #ecf0fb;
   margin-top: 38px;
 

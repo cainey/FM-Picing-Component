@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="container">
-      <div id="header">
+      <header>
         <div>
           <h1>Simple, traffic-based pricing</h1>
         </div>
@@ -26,35 +26,35 @@
             >Sign-up for our 30-day trial. <br />No credit card required.</span
           >
         </div>
-      </div>
+      </header>
 
-      <div id="inner">
-        <div id="title">
-          <h2>100k Pageviews</h2>
+      <div class="inner">
+        <div class="title">
+          <p>100k Pageviews</p>
         </div>
 
 
-        <div id="slider-container">
+        <div class="slider-container">
           <input type="range" min="10" max="100" value="50" class="slider" id="fader" step="10" oninput="outputUpdate(value)" />
         </div>
 
-        <div id="price">
+        <div class="price">
           <div>
             <h2>£<output for="fader" id="slider">50</output> <bold id="monthly">/month</bold></h2>
           </div>
         </div>
 
-        <div id="payment">
+        <div class="payment">
           <div>Monthly Billing</div>
 
-          <label id="switch">
+          <label class="switch">
             <input type="checkbox" checked>
             <span class="slider round"></span>
           </label>
 
-          <div>Yearly Billing <bold id="off">-25%</bold></div>
+          <div>Yearly Billing <bold class="off">-25%</bold></div>
         </div>
-        <div id="benifits">
+        <div class="benifits">
           <ul>
             <li>Unlimited websites</li>
             <li>100% data ownership</li>
